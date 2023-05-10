@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8080
 
 # Ejecuta el comando para iniciar la aplicación
-CMD ["python3", "main.py"]
+CMD ["python3", "app.py"]
