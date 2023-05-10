@@ -1,10 +1,18 @@
 FROM python:3.11-slim-buster
 
-WORKDIR /python-docker
+WORKDIR /app
 
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+# Copia el archivo requirements.txt al contenedor
+COPY requirements.txt .
 
+# Instala las dependencias
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Copia el resto de la aplicación
 COPY . .
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+# Expone el puerto en el que se ejecutará la aplicación
+EXPOSE 8080
+
+# Ejecuta el comando para iniciar la aplicación
+CMD ["python3", "main.py"]
