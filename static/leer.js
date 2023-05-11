@@ -13,7 +13,7 @@ const options = {
 let atributos_arr = []
 // Hacemos una solicitud POST a la dirección 
 
-const url ="http://127.0.0.1:5000/plantillas"
+const url ="http://127.0.0.1:8080/plantillas"
 fetch(url, options)
 .then(response => response.json())
 .then(data => {
@@ -61,7 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("inpatt").disabled = false;
   document.getElementById("atributos").disabled = false;
   console.log("habilitando el boton")
-  const url ="http://127.0.0.1:5000/plantillas"
+  const url ="http://127.0.0.1:8080/plantillas"
 fetch(url, options)
 .then(response => response.json())
 .then(data => {
