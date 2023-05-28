@@ -322,5 +322,3 @@ celda12.innerHTML ='<br><tr><input type="button" value="Y" onclick="and()"></tr>
 }
 
 
-
-// Selecciona el elemento del DOM que se va a observar
