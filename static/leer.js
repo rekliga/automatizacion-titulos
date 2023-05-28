@@ -321,4 +321,3 @@ celda11.innerHTML = '<input type="button" class="btn btn-info" value="O" onclick
 celda12.innerHTML ='<br><tr><input type="button" value="Y" onclick="and()"></tr>';
 }
 
-
